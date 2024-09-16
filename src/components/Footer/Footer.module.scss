@@ -1,0 +1,36 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 20px 10vw; /* Thêm padding trên dưới để tạo khoảng cách */
+    display: grid;
+    grid-template-columns: 15vw 15vw 5vw 5vw;
+    gap: 12.5vw;
+    align-items: center;
+    color: var(--secondary);
+    background-color: var(--primary);
+    align-items: center;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.footer-extra {
+    font-size: 2rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column; /* Đặt Flexbox theo cột */
+    gap: 6px; /* Khoảng cách giữa các mục */
+
+    & a {
+        text-decoration: none;
+        color: var(--secondary);
+    }
+
+    & span {
+        font-size: 1.8rem;
+    }
+}

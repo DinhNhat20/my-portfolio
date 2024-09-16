@@ -1,0 +1,26 @@
+.wrapper {
+    padding-top: 90px;
+}
+
+.skill-title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--primary);
+}
+
+.skill-card {
+    margin: 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--secondary);
+    color: var(--primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

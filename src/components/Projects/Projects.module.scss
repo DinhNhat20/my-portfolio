@@ -1,0 +1,108 @@
+.wrapper {
+    margin: 28px 0;
+    padding: 72px;
+    & h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+        color: var(--primary);
+        padding: 15px;
+    }
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.project-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    border: 1px solid var(--secondary);
+    background-color: transparent;
+    color: var(--secondary);
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+}
+
+.project-item {
+    width: 90%;
+}
+
+.left {
+    width: 40%;
+    padding: 0 12px;
+    text-align: left;
+
+    & h2 {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        color: var(--secondary);
+        font-weight: bold;
+    }
+    & p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+    & h3 {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    padding: 20px 0px;
+    border-radius: 12px;
+    background-color: var(--primary);
+
+    & h2 {
+        margin-top: 26px;
+        color: var(--secondary);
+        font-weight: bold;
+    }
+
+    & .btn {
+        padding: 20px;
+    }
+
+    & .btn:hover {
+        color: var(--primary);
+        background-color: var(--secondary);
+    }
+}
+
+.project-images {
+    width: 36%;
+    border-radius: 12px;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Thời gian chuyển đổi */
+}
+
+.project-images.active {
+    opacity: 1; /* Khi ảnh được kích hoạt, sẽ hiển thị rõ */
+    transform: scale(1); /* Hiệu ứng phóng to nhẹ khi chuyển ảnh */
+}

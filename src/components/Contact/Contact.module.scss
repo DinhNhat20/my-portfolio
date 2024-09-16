@@ -1,0 +1,31 @@
+.wrapper {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--primary);
+}
+
+.contact-card {
+    margin: 4px;
+    border: 2px solid var(--secondary);
+    border-radius: 60px;
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        /* Thêm màu cho box-shadow */
+        box-shadow: 0 4px 8px var(--secondary); /* Đổ bóng màu xanh dương nhạt */
+    }
+}
+
+.contact-link {
+    text-decoration: none;
+    color: var(--primary);
+}
